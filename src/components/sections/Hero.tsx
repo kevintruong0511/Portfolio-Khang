@@ -27,8 +27,8 @@ export function Hero() {
       <NoiseOverlay />
       <DiagonalLines />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl">
-        <h1 className="font-display font-bold uppercase leading-[0.95] tracking-tight text-[clamp(2.5rem,8vw,6.5rem)]">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-12">
+        <h1 className="order-2 font-display font-bold uppercase leading-[0.95] tracking-tight text-[clamp(2.5rem,7vw,6rem)] lg:order-1">
           <motion.span
             custom={0}
             variants={lineVariants}
@@ -46,19 +46,8 @@ export function Hero() {
             variants={lineVariants}
             initial="hidden"
             animate="visible"
-            className="relative flex items-center gap-6"
+            className="block"
           >
-            <span className="relative -ml-2 hidden h-24 w-24 shrink-0 overflow-hidden rounded-full border border-white/10 bg-gradient-to-br from-accent-red/30 via-accent-purple/20 to-transparent backdrop-blur-sm sm:inline-block md:h-32 md:w-32">
-              <span className="absolute inset-0 -z-10 rounded-full bg-accent-red/30 blur-3xl" />
-              <Image
-                src="/images/avatar/Khang-UTS.png"
-                alt={siteConfig.name}
-                fill
-                priority
-                sizes="(min-width: 768px) 8rem, 6rem"
-                className="object-cover"
-              />
-            </span>
             I&apos;M {siteConfig.shortName.toUpperCase()}
           </motion.span>
 
@@ -67,10 +56,10 @@ export function Hero() {
             variants={lineVariants}
             initial="hidden"
             animate="visible"
-            className="relative inline-block py-2"
+            className="relative my-3 inline-block md:my-4"
           >
-            <GridOverlay className="-inset-x-2 -inset-y-1 -z-10" />
-            <span className="relative border border-dashed border-white/20 px-2">
+            <GridOverlay className="inset-0 -z-10" />
+            <span className="relative inline-block border border-dashed border-white/20 px-3 py-1.5">
               <GradientText>{siteConfig.role[0]}</GradientText>
             </span>
           </motion.span>
@@ -80,11 +69,30 @@ export function Hero() {
             variants={lineVariants}
             initial="hidden"
             animate="visible"
-            className="block text-[clamp(1.5rem,5vw,4rem)]"
+            className="block text-[clamp(1.5rem,4vw,3.25rem)]"
           >
             {siteConfig.role[1]}
           </motion.span>
         </h1>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          className="relative order-1 mx-auto aspect-square w-full max-w-xs sm:max-w-sm lg:order-2 lg:max-w-md"
+        >
+          <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-accent-red/40 via-accent-purple/30 to-transparent blur-3xl" />
+          <div className="relative h-full w-full overflow-hidden rounded-full border border-white/10 bg-surface-glass">
+            <Image
+              src="/images/avatar/Khang-UTS.png"
+              alt={siteConfig.name}
+              fill
+              priority
+              sizes="(min-width: 1024px) 28rem, (min-width: 640px) 24rem, 20rem"
+              className="object-cover"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

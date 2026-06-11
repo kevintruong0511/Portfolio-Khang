@@ -52,7 +52,7 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="rounded-pill border border-border-subtle bg-surface px-3 py-1 text-xs text-white/70"
+              className="rounded-pill border border-accent-purple/30 bg-gradient-to-r from-accent-red/15 to-accent-purple/15 px-3 py-1 text-xs font-medium text-white/90 transition-colors duration-200 hover:border-accent-purple/60 hover:from-accent-red/25 hover:to-accent-purple/25"
             >
               {tech}
             </span>

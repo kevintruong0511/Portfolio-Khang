@@ -127,47 +127,35 @@ export const projects: Project[] = [
     name: 'Task Flow',
     description:
       'Full-stack Todo app (React + Vite, Express, PostgreSQL) - dockerized with auto-deploy to VPS via GitHub Actions.',
+    image: '/images/projects/taskflow.png',
     tech: ['React', 'Express', 'PostgreSQL', 'Docker'],
-    liveUrl: 'http://103.82.21.174/login',
+    liveUrl: 'http://103.82.21.174',
   },
   {
     id: 'solar-system',
     name: '3D Web & Solar System',
     description:
       'Interactive 3D Solar System & Galaxy portfolio built with Three.js, GLSL shaders, and NASA 2K textures. Features realistic planets, an animated Sun, particle effects, and an educational planet info panel.',
+    image: '/images/projects/3D-solarsystem.png',
     tech: ['Three.js', 'GLSL', 'JavaScript'],
     liveUrl: 'https://3-d-web-solarsystem.vercel.app',
   },
   {
-    id: 'creative-studio',
-    name: 'Creative Studio Website',
+    id: 'nestshop',
+    name: 'NestShop',
     description:
-      'A bold, animation-driven website concept for a creative agency, featuring smooth scroll-triggered transitions.',
-    tech: ['React', 'TypeScript', 'Framer Motion'],
-    // TODO: githubUrl, liveUrl
+      'A modern e-commerce storefront with product browsing, cart, and checkout flow.',
+    image: '/images/projects/nestshop.png',
+    tech: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    liveUrl: 'https://web-banyen.vercel.app',
   },
   {
-    id: 'course-app',
-    name: 'Course App',
+    id: 'license-plate',
+    name: 'Computer Vision - Vehicle License Plate Tracking',
     description:
-      'An online learning platform with course catalogs, progress tracking, and a clean, distraction-free player.',
-    tech: ['Next.js', 'Node.js', 'PostgreSQL'],
-    // TODO: githubUrl, liveUrl
-  },
-  {
-    id: 'money-management',
-    name: 'Money Management App',
-    description:
-      'A personal finance tracker that visualizes spending habits and helps users budget across categories.',
-    tech: ['React', 'TypeScript', 'Express'],
-    // TODO: githubUrl, liveUrl
-  },
-  {
-    id: 'real-estate',
-    name: 'Real Estate App',
-    description:
-      'A property listing platform with search filters, interactive maps, and saved favorites.',
-    tech: ['Next.js', 'Tailwind CSS', 'PostgreSQL'],
+      'Real-time vehicle license plate detection and tracking from video using computer vision and OCR.',
+    image: '/images/projects/licenseplate-detect.png',
+    tech: ['Python', 'OpenCV', 'YOLO'],
     // TODO: githubUrl, liveUrl
   },
 ];
