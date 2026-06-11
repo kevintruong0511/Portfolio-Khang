@@ -198,8 +198,8 @@ export const awards: Award[] = [
       'First place with Team HCMUT AquaGuard in the ASU and Dow Vietnam STEM Program: Engineering Projects in Community Service (EPICS).',
     images: [
       '/images/awards/epics-team.png',
-      '/images/awards/epics-cert-team.png',
-      '/images/awards/epics-cert-khang.png',
+      '/images/awards/epics-first-place.jpg',
+      '/images/awards/epics-individual.png',
     ],
   },
   {
@@ -210,9 +210,9 @@ export const awards: Award[] = [
     description:
       'First Prize and Golden Ticket with team AquaGuardian at the OISP Community Day & Presentation Contest 2025.',
     images: [
-      '/images/awards/oisp-team.png',
-      '/images/awards/oisp-cert-first.png',
-      '/images/awards/oisp-cert-golden.png',
+      '/images/awards/opc-team.png',
+      '/images/awards/opc-certs.png',
+      '/images/awards/opc-goldenticket.png',
     ],
   },
 ];
