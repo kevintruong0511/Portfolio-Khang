@@ -32,13 +32,22 @@ export interface Project {
   liveUrl?: string;
 }
 
-export interface TimelineItem {
+export interface EducationItem {
   id: string;
-  type: "work" | "education" | "certificate";
-  title: string;
-  organization: string;
+  school: string;
+  degree: string;
   period: string;
+  gpa?: string;
   description?: string;
+}
+
+export interface Award {
+  id: string;
+  title: string;
+  issuer: string;
+  year: string;
+  description?: string;
+  images?: string[];
 }
 
 export interface SocialLink {

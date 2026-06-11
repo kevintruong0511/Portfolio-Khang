@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Contact } from "@/components/sections/Contact";
+import { Education } from "@/components/sections/Education";
 
 export const metadata: Metadata = {
-  title: "Contact | Khang",
+  title: "Education | Khang",
 };
 
-export default function ContactPage() {
+export default function EducationPage() {
   return (
     <main className="flex flex-1 flex-col justify-center py-16 md:py-24">
-      <Contact />
+      <Education />
     </main>
   );
 }

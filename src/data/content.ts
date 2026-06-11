@@ -1,11 +1,12 @@
 import type {
   AboutContent,
+  Award,
+  EducationItem,
   Project,
   Service,
   SiteConfig,
   SkillCategory,
   SocialLink,
-  TimelineItem,
 } from '@/types/content';
 
 export const siteConfig: SiteConfig = {
@@ -20,8 +21,8 @@ export const siteConfig: SiteConfig = {
     { label: 'About', href: '/about' },
     { label: 'Skills', href: '/skills' },
     { label: 'Projects', href: '/projects' },
-    { label: 'Experience', href: '/experience' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Education', href: '/education' },
+    { label: 'Awards', href: '/awards' },
   ],
 };
 
@@ -160,34 +161,23 @@ export const projects: Project[] = [
   },
 ];
 
-// TODO: update with your real experience, education, and certificates
-export const timeline: TimelineItem[] = [
+export const education: EducationItem[] = [
   {
     id: 'hcmut',
-    type: 'education',
-    title: 'B.Eng. in Computer Science',
-    organization: 'Ho Chi Minh City University of Technology (HCMUT)',
+    school: 'Ho Chi Minh City University of Technology (HCMUT)',
+    degree: 'Computer Science',
     period: '2025 - Present',
     description:
       'Focusing on software engineering, system design, and web development.',
   },
   {
-    id: 'freelance-web',
-    type: 'work',
-    title: 'Freelance Web Developer',
-    organization: 'Self-employed',
-    period: '2024 - Present',
+    id: 'uts',
+    school: 'University of Technology Sydney (UTS)',
+    degree: 'Bachelor of Artificial Intelligence',
+    period: '2025 - Present',
+    gpa: '3.8 / 4.0',
     description:
-      "Designing and building websites for small businesses, including Aquaguard's product site.",
-  },
-  {
-    id: 'highschool',
-    type: 'education',
-    title: 'High School Diploma',
-    organization: 'Specialized High School',
-    period: '2022 - 2025',
-    description:
-      'Specialized program with a focus on mathematics and informatics.',
+      'International joint program between HCMUT and UTS.',
   },
 ];
 
@@ -196,4 +186,33 @@ export const socialLinks: SocialLink[] = [
   { label: 'GitHub', url: 'https://github.com/', icon: 'github' },
   { label: 'LinkedIn', url: 'https://linkedin.com/', icon: 'linkedin' },
   { label: 'Email', url: `mailto:${siteConfig.email}`, icon: 'mail' },
+];
+
+export const awards: Award[] = [
+  {
+    id: 'epics-2026',
+    title: '1st Place Winner - EPICS 8th (Engineering Projects in Community Service) 2026',
+    issuer: 'Arizona State University & Dow Vietnam',
+    year: 'May 2026',
+    description:
+      'First place with Team HCMUT AquaGuard in the ASU and Dow Vietnam STEM Program: Engineering Projects in Community Service (EPICS).',
+    images: [
+      '/images/awards/epics-team.png',
+      '/images/awards/epics-cert-team.png',
+      '/images/awards/epics-cert-khang.png',
+    ],
+  },
+  {
+    id: 'oisp-2025',
+    title: '1st Place Winner - OISP Presentation Contest 2025',
+    issuer: 'Ho Chi Minh City University of Technology (HCMUT)',
+    year: 'Jan 2026',
+    description:
+      'First Prize and Golden Ticket with team AquaGuardian at the OISP Community Day & Presentation Contest 2025.',
+    images: [
+      '/images/awards/oisp-team.png',
+      '/images/awards/oisp-cert-first.png',
+      '/images/awards/oisp-cert-golden.png',
+    ],
+  },
 ];

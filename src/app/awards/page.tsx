@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Experience } from "@/components/sections/Experience";
+import { Awards } from "@/components/sections/Awards";
 
 export const metadata: Metadata = {
-  title: "Experience | Khang",
+  title: "Awards | Khang",
 };
 
-export default function ExperiencePage() {
+export default function AwardsPage() {
   return (
     <main className="flex flex-1 flex-col justify-center py-16 md:py-24">
-      <Experience />
+      <Awards />
     </main>
   );
 }
