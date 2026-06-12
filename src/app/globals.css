@@ -63,3 +63,44 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
 }
+
+@property --glow-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes glow-spin {
+  to {
+    --glow-angle: 360deg;
+  }
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--glow-angle),
+    transparent 0%,
+    var(--accent-red) 8%,
+    var(--accent-purple) 16%,
+    transparent 24%,
+    transparent 50%,
+    var(--accent-orange) 58%,
+    var(--accent-purple) 66%,
+    transparent 74%
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: glow-spin 5s linear infinite;
+  pointer-events: none;
+}

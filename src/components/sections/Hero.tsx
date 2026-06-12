@@ -84,7 +84,7 @@ export function Hero() {
           <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-accent-red/40 via-accent-purple/30 to-transparent blur-3xl" />
           <div className="relative h-full w-full overflow-hidden rounded-full border border-white/10 bg-surface-glass">
             <Image
-              src="/images/avatar/Khang-UTS.png"
+              src="/images/avatar/Khang-hinh2.png"
               alt={siteConfig.name}
               fill
               priority

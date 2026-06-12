@@ -13,7 +13,8 @@ export interface AboutContent {
 
 export interface Skill {
   name: string;
-  level: number;
+  icon?: string;
+  iconColor?: string;
 }
 
 export interface SkillCategory {

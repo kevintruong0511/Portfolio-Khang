@@ -53,36 +53,52 @@ export const about: AboutContent = {
   ],
 };
 
-// TODO: adjust skill levels to reflect your real proficiency
 export const skillCategories: SkillCategory[] = [
   {
     id: 'frontend',
     title: 'Frontend',
     skills: [
-      { name: 'React', level: 85 },
-      { name: 'Next.js', level: 80 },
-      { name: 'TypeScript', level: 75 },
-      { name: 'Tailwind CSS', level: 85 },
+      { name: 'HTML', icon: 'html5', iconColor: 'E34F26' },
+      { name: 'React', icon: 'react', iconColor: '61DAFB' },
+      { name: 'Next.js', icon: 'nextdotjs', iconColor: 'FFFFFF' },
+      { name: 'TypeScript', icon: 'typescript', iconColor: '3178C6' },
+      { name: 'Tailwind CSS', icon: 'tailwindcss', iconColor: '06B6D4' },
     ],
   },
   {
     id: 'backend',
     title: 'Backend',
     skills: [
-      { name: 'Node.js', level: 70 },
-      { name: 'Express', level: 65 },
-      { name: 'PostgreSQL', level: 60 },
-      { name: 'REST APIs', level: 75 },
+      { name: 'Node.js', icon: 'nodedotjs', iconColor: '5FA04E' },
+      { name: 'Express', icon: 'express', iconColor: 'FFFFFF' },
+      { name: 'PostgreSQL', icon: 'postgresql', iconColor: '4169E1' },
+      { name: 'MongoDB', icon: 'mongodb', iconColor: '47A248' },
+      { name: 'Redis', icon: 'redis', iconColor: 'FF4438' },
+      { name: 'REST APIs' },
     ],
   },
   {
-    id: 'tools',
-    title: 'Tools & Others',
+    id: 'infra',
+    title: 'Infra & Tools',
     skills: [
-      { name: 'Git & GitHub', level: 80 },
-      { name: 'Figma', level: 60 },
-      { name: 'Docker', level: 55 },
-      { name: 'Framer Motion', level: 70 },
+      { name: 'Git', icon: 'git', iconColor: 'F05032' },
+      { name: 'GitHub', icon: 'github', iconColor: 'FFFFFF' },
+      { name: 'Docker', icon: 'docker', iconColor: '2496ED' },
+      { name: 'Nginx', icon: 'nginx', iconColor: '009639' },
+      { name: 'Figma', icon: 'figma', iconColor: 'F24E1E' },
+      { name: 'Claude', icon: 'claude', iconColor: 'D97757' },
+    ],
+  },
+  {
+    id: 'languages',
+    title: 'Languages',
+    skills: [
+      { name: 'JavaScript', icon: 'javascript', iconColor: 'F7DF1E' },
+      { name: 'Python', icon: 'python', iconColor: '3776AB' },
+      {
+        name: 'Java',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+      },
     ],
   },
 ];
