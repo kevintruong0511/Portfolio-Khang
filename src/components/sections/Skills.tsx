@@ -48,7 +48,10 @@ export function Skills() {
                         }
                           alt=""
                           aria-hidden="true"
-                          className="h-12 w-12"
+                          className={cn(
+                            "h-12 w-12",
+                            skill.invertIcon && "invert"
+                          )}
                           loading="lazy"
                         />
                       ) : (

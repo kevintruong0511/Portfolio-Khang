@@ -70,7 +70,11 @@ export const skillCategories: SkillCategory[] = [
     title: 'Backend',
     skills: [
       { name: 'Node.js', icon: 'nodedotjs', iconColor: '5FA04E' },
-      { name: 'Express', icon: 'express', iconColor: 'FFFFFF' },
+      {
+        name: 'Express',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+        invertIcon: true,
+      },
       { name: 'PostgreSQL', icon: 'postgresql', iconColor: '4169E1' },
       { name: 'MongoDB', icon: 'mongodb', iconColor: '47A248' },
       { name: 'Redis', icon: 'redis', iconColor: 'FF4438' },

@@ -15,6 +15,7 @@ export interface Skill {
   name: string;
   icon?: string;
   iconColor?: string;
+  invertIcon?: boolean;
 }
 
 export interface SkillCategory {
