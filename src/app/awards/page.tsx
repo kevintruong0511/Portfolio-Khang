@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Awards } from "@/components/sections/Awards";
+import type { Metadata } from 'next';
+import { Awards } from '@/components/sections/Awards';
 
 export const metadata: Metadata = {
-  title: "Awards | Khang",
+  title: 'Awards | Khang',
 };
 
 export default function AwardsPage() {
@@ -12,3 +12,4 @@ export default function AwardsPage() {
     </main>
   );
 }
+//add comments
